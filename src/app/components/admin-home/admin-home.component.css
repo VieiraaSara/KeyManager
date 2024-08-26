@@ -1,0 +1,146 @@
+
+* {
+margin: 0;
+padding: 0;
+font-family: "Poppins";
+box-sizing: border-box;
+color: #ffffff;
+}
+a {
+text-decoration: none ;
+color: #ffffff ;
+transition: 0.4s;
+}
+
+a:hover {
+color: #0b57c8 ;
+}
+
+body {
+background-color: #121212 ;
+}
+
+.row {
+display: flex !important;
+flex-direction: column;
+justify-content: center !important;
+}
+
+.main1 {
+display: flex !important;
+justify-content: space-around !important;
+flex-direction: column !important;
+}
+
+.main2 img {
+display: flex !important;
+flex-direction: column !important;
+justify-content: space-around !important;
+width: 40% !important;
+}
+
+nav {
+display: flex !important;
+justify-content: space-between !important;
+padding: 1em !important;
+font-weight: 500 !important;
+background-color: #0e0e0e !important;
+}
+
+
+
+.brand,
+.links {
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+}
+
+.brand img {
+margin-right: 0.6em;
+}
+
+.brand h2 {
+transition: 0.4s;
+}
+
+.brand:hover > h2 {
+color: #0b57c8 !important;
+}
+
+.links li {
+margin-right: 1em;
+list-style: none;
+}
+
+.links a {
+padding: 0.1em 0.3em;
+}
+
+#add a {
+color: #0b57c8 !important;
+}
+
+#add a:hover {
+color: #0b57c8 !important;
+}
+
+ .card-protocolo {
+   margin-top: 20px;
+ }
+
+ .linha {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   margin: 10px;
+ }
+
+ .linha > div {
+   background-color: #235EFE;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   width: 23%;
+ }
+
+ .linha h5 {
+   margin-top: 0;
+   font-size: 18px;
+   color: #ffffff;
+ }
+
+ .linha p {
+   font-size: 14px;
+   color: #d4d4d4;
+   margin: 5px 0;
+ }
+
+ .linha button {
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   margin-top: 10px;
+ }
+
+ .editar-btn {
+   background-color: #4CAF50;
+   color: white;
+ }
+
+ .editar-btn:hover {
+   background-color: #45a049;
+ }
+
+ .excluir-btn {
+   background-color: #f44336;
+   color: white;
+ }
+
+ .excluir-btn:hover {
+   background-color: #e53935;
+ }
+
+ 

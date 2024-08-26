@@ -1,0 +1,83 @@
+    /*  ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ Código feito por: Sara ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡
+♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ KeyManager ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #0e0e0e;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #0b57c8;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+select {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #0b57c8;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+input[type="submit"]:hover {
+  background-color: #094cb7;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  
+}

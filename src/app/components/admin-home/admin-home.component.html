@@ -1,0 +1,17 @@
+<body>
+  <app-admin-navbar></app-admin-navbar>
+
+  <div class="card-protocolo">
+    <div class="linha">
+      <div *ngFor="let protocolo of protocolos" class="protocolo-card">
+        <h5>Nome: {{ protocolo.userBiometric }}</h5>
+        <p>Status: {{ protocolo.status }}</p>
+        <p>Horário inicial: {{ protocolo.initialTime }}</p>
+        <p>Horário final: {{ protocolo.returnTime }}</p>
+        <p>Porta(s): {{ protocolo.ports }}</p>
+        <button class="editar-btn" (click)="editProtocolo(protocolo.protocolID)">Editar</button>
+        <button class="excluir-btn" (click)="deleteProtocolo(protocolo.protocolID)">Excluir</button>
+      </div>
+    </div>
+  </div>
+</body>
