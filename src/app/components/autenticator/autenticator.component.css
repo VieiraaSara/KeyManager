@@ -1,0 +1,129 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0e0e0e;
+  position: relative;
+  z-index: 1; /* Certifique-se de que o corpo esteja atrás */
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(131, 131, 131, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 2; /* Fundo desfocado com prioridade */
+}
+
+.container-aut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1F1F1F;
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 3; /* Certifique-se de que o container esteja na frente */
+  text-align: center;
+  position: relative;
+}
+
+.instruction-text {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.impressao {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.auth-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0b57c8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #084eac;
+}
+
+.auth-button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3rem;
+  border: 0.3em solid rgba(0, 0, 0, 0.1);
+  border-top-color: #0b57c8;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #2ecc71;
+}
+
+a.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+a.back-link:hover {
+  color: #0b57c8;
+}
+
+.arrow-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.d-none {
+  display: none;
+}

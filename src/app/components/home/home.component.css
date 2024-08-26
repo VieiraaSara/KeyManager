@@ -1,0 +1,302 @@
+/*  ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ Código feito por: Sara ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡
+♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ KeyManager ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none ;
+  color: #ffffff ;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #0b57c8 ;
+}
+
+body,.body {
+  background-color: #121212 ;
+}
+
+.row {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+.main1 {
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-direction: column !important;
+}
+
+.main2 img {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  width: 40% !important;
+}
+
+nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 1em !important;
+  font-weight: 500 !important;
+  background-color: #0e0e0e !important;
+}
+
+
+
+.brand,
+.links {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.brand img {
+  margin-right: 0.6em;
+}
+
+.brand h2 {
+  transition: 0.4s;
+}
+
+.brand:hover > h2 {
+  color: #0b57c8 !important;
+}
+
+.links li {
+  margin-right: 1em;
+  list-style: none;
+}
+
+.links a {
+  padding: 0.1em 0.3em;
+}
+
+#add a {
+  color: #0b57c8 !important;
+}
+
+#add a:hover {
+  color: #0b57c8 !important;
+}
+
+
+
+.button-86 {
+    all: unset;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #0b57c8;
+    border-radius: 10px;
+}
+
+.button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px;
+}
+
+
+
+.main1, .main2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main1 h1 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main2 img {
+    width: 70% !important;
+    margin-left: 20%;
+}
+
+footer {
+    background-color: #090909 !important;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    margin: 0;
+}
+
+.portas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.portas h4{
+  margin: 30px;
+}
+
+.portas .p1{
+  background-color: #94ff3d;
+  width: 30%;
+  height: 50%;
+  margin: 10px;
+}
+
+.portas .p2{
+  background-color: #ff3d3d;
+  width: 30%;
+  height: 50%;
+  margin: 10px;
+}
+
+
+.portas .p3{
+  background-color: #91ff3d;
+  width: 30%;
+  height: 50%;
+  margin: 10px;
+}
+
+.portas .p4{
+  background-color: #ff3d3d;
+  width: 30%;
+  height: 50%;
+  margin: 10px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+strong{
+  font-size: 200px;
+}
+
+
+
+.card-protocolo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.linha, .c1, .c2, .c3, .c4{
+  width: 70%;
+  height: 50%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.c1, .c2, .c3, .c4{
+  background-color: #0b57c8;
+}
+
+.container-aut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #090909;
+  width: 50%;
+  height: 60%;
+}
+
+.impressao img{
+  width: 10%;
+  height: 10%;
+  margin-top: 40px;
+}
+
+
+svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 500px;
+}
