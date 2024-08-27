@@ -6,10 +6,6 @@ import { AdminNavbarComponent } from '../admin-navbar/admin-navbar.component';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-admin-home',
-  standalone: true,
-  imports: [AdminNavbarComponent,
-    CommonModule
-  ],
   templateUrl: './admin-home.component.html',
   styleUrl: './admin-home.component.css'
 })

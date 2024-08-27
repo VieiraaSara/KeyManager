@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-admin-lista-usuario',
-  standalone: true,
-  imports: [AdminNavbarComponent, CommonModule],
   templateUrl: './admin-lista-usuario.component.html',
   styleUrls: ['./admin-lista-usuario.component.css']
 })

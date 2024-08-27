@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LayoutComponent } from './components/layout/layout.component';
@@ -16,8 +18,6 @@ import { AdminEditProtocoloComponent } from './components/admin-edit-protocolo/a
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
 import { AdminEditUsuarioComponent } from './components/admin-edit-usuario/admin-edit-usuario.component';
-import { routes } from './app.routes';
-import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -38,14 +38,14 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule    
   ],
   providers: [
-    provideHttpClient(withInterceptorsFromDi()) 
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

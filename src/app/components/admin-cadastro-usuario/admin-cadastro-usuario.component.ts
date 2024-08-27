@@ -5,8 +5,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-admin-cadastro-usuario',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './admin-cadastro-usuario.component.html',
   styleUrls: ['./admin-cadastro-usuario.component.css'] 
 })

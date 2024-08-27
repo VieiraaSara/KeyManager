@@ -4,8 +4,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-edit-usuario',
-  standalone: true,
-  imports: [],
   templateUrl: './admin-edit-usuario.component.html',
   styleUrl: './admin-edit-usuario.component.css'
 })

@@ -5,10 +5,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-autenticator',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
   templateUrl: './autenticator.component.html',
   styleUrls: ['./autenticator.component.css']
 })

@@ -1,6 +1,3 @@
-<body>
-  
-
 <div class="container-aut">
  
  <a href="/" class="back-link">
@@ -13,7 +10,7 @@
   </a> 
   <h3 class="instruction-text">Coloque seu dedo na impressão digital!</h3>
   
-  <img class="impressao" src="/img/impreazul.png" alt="Impressão Digital">
+  <img class="impressao" src="assets/img/impreazul.png" alt="Impressão Digital">
   
 
   <button (click)="autenticar()" [disabled]="isLoading" class="auth-button">Autenticar</button>
@@ -31,4 +28,3 @@
 
   <p *ngIf="authToken" class="success-message">Autenticação bem-sucedida!</p>
 </div>
-</body>

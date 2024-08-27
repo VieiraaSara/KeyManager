@@ -7,8 +7,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-admin-edit-protocolo',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './admin-edit-protocolo.component.html',
   styleUrls: ['./admin-edit-protocolo.component.css']
 })

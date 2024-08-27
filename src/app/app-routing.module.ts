@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+
 import { AvailableportsComponent } from './components/availableports/availableports.component';
 import { AutenticatorComponent } from './components/autenticator/autenticator.component';
 import { AdminAbtProtocoloComponent } from './components/admin-abt-protocolo/admin-abt-protocolo.component';
@@ -19,7 +20,7 @@ const routes: Routes = [
   { path: 'editprotocol', component: AdminEditProtocoloComponent },
   { path: 'adminhome', component: AdminHomeComponent },
   { path: 'listuser', component: AdminListaUsuarioComponent },
-  { path: 'edituser', component: AdminEditUsuarioComponent}
+  { path: 'edituser', component: AdminEditUsuarioComponent}  
 ];
 
 @NgModule({

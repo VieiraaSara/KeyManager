@@ -4,8 +4,6 @@ import { UserregistrationService } from '../../services/userregistration.service
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-admin-abt-protocolo',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './admin-abt-protocolo.component.html',
   styleUrl: './admin-abt-protocolo.component.css'
 })
